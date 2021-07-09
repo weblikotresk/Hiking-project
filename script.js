@@ -37,7 +37,7 @@ window.onscroll=()=>{
 
     let scroll_value=window.scrollY
     console.log(scroll_value)
-    alert(`${(getOffset(section_img[0]).top - 500), scroll_value, scrollHeight} dlasd`)
+
     if(scroll_value >=getOffset(section_img[0]).top - 500){
         section_text[0].style.transform = 'translate(0,0)';
         section_text[0].style.opacity = '1';
