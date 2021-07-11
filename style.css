@@ -51,7 +51,7 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.menu ul{
+.menu li{
     margin: 0 20px;
     display: inline-block;
     position: relative;
@@ -71,10 +71,10 @@ header{
 .account span{
     position: relative;
 }
-.menu ul:hover, .account:hover{
+.menu li:hover, .account:hover{
     cursor: pointer;
 }
-.menu ul:after, .account span:after {
+.menu li:after, .account span:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -86,7 +86,7 @@ header{
     transform-origin: bottom left;
     transition: transform 0.42s ease-out;
 }
-.menu ul:hover:after, .account span:hover:after {
+.menu li:hover:after, .account span:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
@@ -555,7 +555,7 @@ footer{
     transition: .5s all ease-in;
     
 }
-.menu_in_hamb ul{
+.menu_in_hamb li{
     text-align: center;
     margin: 40px auto;
     display: inline-block;
@@ -572,7 +572,7 @@ footer{
 .account_in_hamb span{
     position: relative;
 }
-.menu_in_hamb ul:hover, .account_in_hamb:hover{
+.menu_in_hamb li:hover, .account_in_hamb:hover{
     cursor: pointer;
 }
 
@@ -582,7 +582,7 @@ footer{
     header{
         margin-bottom:100px;
     }
-    .menu_in_hamb ul:after, .account_in_hamb span:after {
+    .menu_in_hamb li:after, .account_in_hamb span:after {
         content: '';
         position: absolute;
         width: 100%;
@@ -594,7 +594,7 @@ footer{
         transform-origin: bottom left;
         transition: transform 0.42s ease-out;
     }
-    .menu_in_hamb ul:hover:after, .account_in_hamb span:hover:after {
+    .menu_in_hamb li:hover:after, .account_in_hamb span:hover:after {
         transform: scaleX(1);
         transform-origin: bottom left;
     }
