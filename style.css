@@ -19,6 +19,7 @@
 body{
     overflow-x: hidden;
     width: 100vw;
+    background-color: #0B1D26;
 }
 
 .fixed{
@@ -27,9 +28,6 @@ body{
 }
 .img_wrapper{
     overflow-x: hidden;
-}
-.mountain_fixed{
-    position: fixed !important;
 }
 header, .start{
     font-family: 'Gilroy';
@@ -146,6 +144,7 @@ header{
     display: flex;
     vertical-align: -5%;
     cursor: pointer;
+    user-select: none;
 }
 .start_scroll_link{
     font-family: 'Gilroy';
@@ -258,6 +257,7 @@ header{
 
     cursor: pointer;
     overflow: hidden;
+    user-select: none;
     
 
 }
@@ -610,7 +610,7 @@ footer{
     
 }
 
-@media  screen and (max-width:400px) {
+@media  screen and (max-width:450px) {
     .start_headline{
         font-size: 50px;
     }

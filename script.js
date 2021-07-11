@@ -9,7 +9,6 @@ let html_el = document.querySelector('html');
 
 input.onclick=()=>{
     html_el.classList.toggle('fixed');
-    mountain.classList.toggle('mountain_fixed');
 }
 scroll_down.onclick=()=>{
     let first_section=document.getElementById('first_section');
@@ -32,12 +31,7 @@ function getOffset(el) {
   }
 
 window.onscroll=()=>{
-
-    console.log(getOffset(section_text[0]).top)
-
     let scroll_value=window.scrollY
-    console.log(scroll_value)
-
     if(scroll_value >=getOffset(section_img[0]).top - 500){
         section_text[0].style.transform = 'translate(0,0)';
         section_text[0].style.opacity = '1';
