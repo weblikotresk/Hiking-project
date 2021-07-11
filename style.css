@@ -18,10 +18,15 @@
 }
 body{
     overflow-x: hidden;
+    width: 100vw;
 }
+
 .fixed{
     position: fixed;
     width: 100%;
+}
+.img_wrapper{
+    overflow-x: hidden;
 }
 .mountain_fixed{
     position: fixed !important;
@@ -104,6 +109,8 @@ header{
 .start_back{
     height: auto;
     padding-top: 64px;
+    overflow: hidden;
+    position: relative;
 }
 .start{
     justify-content: center;
