@@ -1,3 +1,22 @@
+//sw
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+    .then((reg) => {
+      // регистрация сработала
+      console.log('Registration succeeded. Scope is ' + reg.scope);
+    }).catch((error) => {
+      // регистрация прошла неудачно
+      console.log('Registration failed with ' + error);
+    });
+}
+
+
+
+
+
+
+
+
 let text=document.getElementsByClassName('start_headline_block')[0];
 let scroll_down=document.getElementsByClassName('start_scroll')[0];
 let section_text=document.getElementsByClassName('section_text');
@@ -6,6 +25,7 @@ let sky = document.getElementsByClassName('sky_img')[0];
 let mountain = document.getElementsByClassName('mountains_img')[0];
 let input = document.querySelector('input');
 let html_el = document.querySelector('html');
+
 
 input.onclick=()=>{
     html_el.classList.toggle('fixed');
@@ -56,6 +76,4 @@ window.onscroll=()=>{
     }
     text.style.top=scroll_value* 0.2 + '%';
     text.style.opacity= 150 -scroll_value*0.16+'%';
-    
-
 }
